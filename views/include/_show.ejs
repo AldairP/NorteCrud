@@ -1,0 +1,20 @@
+<% for(var i = 0; i < projects.length; i++) { %>
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%= projects[i].name %></td>
+        <td><%= projects[i].academica %></td>
+        <td><%= projects[i].grupoinv %></td>
+        <td><%= projects[i].finaciadora %></td>
+        <td><%= projects[i].otras %></td>
+        <td><%= projects[i].ingresoun %></td>
+        <td><%= projects[i].coinvestigador %></td>
+        <td>
+            <a href="/update-project?id=<%= projects[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a class="btn border-shadow delete" data-id=<%= projects[i]._id%> >
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% } %>

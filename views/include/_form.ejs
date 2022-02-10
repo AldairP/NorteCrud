@@ -1,0 +1,47 @@
+<!-- form handling-->
+<form action="/api/projects" method="POST" id="add_project">
+  <div class="new_project">
+    <div class="form-group">
+      <label for="name" class="text-light">Name</label>
+      <input type="hidden" name="id" value="" />
+      <input type="text" name="name" value="" placeholder="Mark Stoiner" />
+    </div>
+    <div class="form-group">
+      <label for="academica" class="text-light">Área Académica</label>
+      <input
+        type="text"
+        name="academica"
+        value=""
+        placeholder="example@gmail.com"
+      />
+    </div>
+    <div class="form-group">
+      <label for="grupoinv" class="text-light"
+        >Grupos de Investigacion responsable</label
+      >
+      <input type="text" name="grupoinv" value="" placeholder="" />
+    </div>
+    <div class="form-group">
+      <label for="finaciadora" class="text-light">Entidad financiadora</label>
+      <input type="text" name="finaciadora" value="" placeholder="" />
+    </div>
+    <div class="form-group">
+      <label for="otras" class="text-light">Otras Entidades</label>
+      <input type="text" name="otras" value="" placeholder="" />
+    </div>
+    <div class="form-group">
+      <label for="ingresoun" class="text-light">Ingreso UNINORTE %</label>
+      <input type="number" name="ingresoun" value="" placeholder="" />
+    </div>
+    <div class="form-group">
+      <label for="coinvestigador" class="text-light"
+        >Investigan Coinvestigadores</label
+      >
+      <input type="text" name="coinvestigador" value="" placeholder="" />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+  </div>
+</form>
